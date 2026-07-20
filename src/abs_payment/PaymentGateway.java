@@ -1,4 +1,8 @@
 package abs_payment;
 
-public class PaymentGateway {
+abstract class PaymentGateway {
+    public void validateCard(){
+        System.out.println("card validated");
+    }
+    abstract void processPayment(double amount);
 }
